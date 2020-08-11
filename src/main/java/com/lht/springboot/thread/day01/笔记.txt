@@ -1,0 +1,5 @@
+1.Thread.currentThread 和 this 的区别：
+    Thread.currentThread 是获取当前线程的引用，一般在没有对象线程时，获取线程信息时获取该段代码所在线程引用。
+    this也可以获取但有区别，在Run2里体现
+2. isAlive判断当前线程是否处于活跃状态
+
