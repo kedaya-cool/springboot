@@ -18,7 +18,7 @@ public class MyThread extends Thread{
 
     private int count = 5;
     @Override
-    public void run() {
+    synchronized public void run() {
         super.run();
         count--;
         System.out.println("---name: "+ this.currentThread().getName() + " -- count:" + count);

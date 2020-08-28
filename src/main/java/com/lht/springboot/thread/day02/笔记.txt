@@ -1,0 +1,8 @@
+1. sleep是让正在执行的线程休眠，这个正在执行的线程指的是this.currentThread返回的线程
+2. getId() 获取线程唯一标识
+3. 停止线程
+    -- Thread.stop() 不安全 已弃用 和suspend/resume 一样
+    -- interrupt()方法停止线程，但不是真正停止,只是在线程中打一个停止的标记
+    -- interrupted() 方式判断当前线程是否中断，是指运行this.interrupted方法的线程  例子证明  -- 是main线程
+            第一次调用 已清除  interrupt导致的中断状态
+    -- isInterrupt() 方法判断线程是否中断
